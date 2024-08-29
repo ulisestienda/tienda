@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULISES</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: #004d40;
+            color: #e0f2f1;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .header img {
+            width: 100px; /* Ajusta según el tamaño de tu logo */
+            height: auto;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+        .nav {
+            background-color: #00796b;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav a {
+            color: #e0f2f1;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #b2dfdb;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .product {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            position: relative; /* Asegura que la etiqueta de oferta se posicione correctamente */
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 3px solid #e0f2f1;
+            margin-bottom: 15px;
+        }
+        .product-name {
+            font-size: 1.4em;
+            margin: 10px 0;
+            color: #004d40;
+        }
+        .product-price {
+            color: #d32f2f;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        .product a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #00796b;
+            padding: 12px 25px;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .product a:hover {
+            background-color: #004d40;
+        }
+        .offer-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #d32f2f;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .products {
+                padding: 10px;
+                gap: 10px;
+            }
+            .product {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="K.PNG" alt="Logo de la tienda"> <!-- Reemplaza 'logo.png' con la ruta a tu logo -->
+    <h1>ULISES</h1>
+</div>
+
+<div class="nav">
+    <!-- Añade enlaces de navegación aquí -->
+</div>
+
+<div class="products">
+    <div class="product">
+        <span class="offer-badge">OFERTA</span>
+        <img src="toy1.jpg" alt="Juguete 1">
+        <div class="product-name">Juguete 1</div>
+        <div class="product-price">$20 USD</div>
+        <a href="product1.html" target="_blank">Ver más</a>
+    </div>
+    <div class="product">
+        <span class="offer-badge">OFERTA</span>
+        <img src="toy2.jpg" alt="Juguete 2">
+        <div class="product-name">Juguete 2</div>
+        <div class="product-price">$30 USD</div>
+        <a href="product2.html" target="_blank">Ver más</a>
+    </div>
+   
+    <!-- Agrega más productos según sea necesario -->
+</div>
+<div class="nav"><h1>ROPA DE MUJER</h1></div>
+
+<div class="products">
+    <div class="product">
+        <img src="toy1.jpg" alt="Juguete 1">
+        <div class="product-name">Juguete 1</div>
+        <div class="product-price">$20 USD</div>
+        <a href="product5.html" target="_blank">Ver más</a>
+    </div>
+    <div class="product">
+        <img src="toy2.jpg" alt="Juguete 2">
+        <div class="product-name">Juguete 2</div>
+        <div class="product-price">$30 USD</div>
+        <a href="product6.html" target="_blank">Ver más</a>
+    </div>
+    
+    <!-- Agrega más productos según sea necesario -->
+</div>
+<div class="nav"><h1>ROPA DE NIÑOS</h1></div>
+
+<div class="products">
+    <div class="product">
+        <img src="toy2.jpg" alt="Juguete 2">
+        <div class="product-name">Juguete 2</div>
+        <div class="product-price">$30 USD</div>
+        <a href="product7.html" target="_blank">Ver más</a>
+    </div>
+    <div class="product">
+        <img src="toy2.jpg" alt="Juguete 2">
+        <div class="product-name">Juguete 2</div>
+        <div class="product-price">$30 USD</div>
+        <a href="product8.html" target="_blank">Ver más</a>
+    </div>
+    
+    <!-- Agrega más productos según sea necesario -->
+</div>
+<div class="nav"><h1>ROPA DE HOMBRE</h1></div>
+
+<div class="products">
+    <div class="product">
+        <img src="toy2.jpg" alt="Juguete 2">
+        <div class="product-name">Juguete 2</div>
+        <div class="product-price">$30 USD</div>
+        <a href="product3.html" target="_blank">Ver más</a>
+    </div>
+    <div class="product">
+        <img src="toy2.jpg" alt="Juguete 2">
+        <div class="product-name">Juguete 2</div>
+        <div class="product-price">$30 USD</div>
+        <a href="product4.html" target="_blank">Ver más</a>
+    </div>
+    
+    <!-- Agrega más productos según sea necesario -->
+</div>
+
+</body>
+</html>
